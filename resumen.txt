@@ -1,0 +1,2 @@
+crear un proyecto: ng new nombre-del-royecto
+correr el proyecto: ng serve -o
