@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './hijo.component.css'
 })
 export class HijoComponent {
+  private titulo = 'Titulo de hijo';
   producto={
     nombre:'Nuevo Producto',
     precio: 100
+  }
+
+  //Getter de typescript
+  get mostrarTitulo(){
+    return this.titulo;
   }
 }

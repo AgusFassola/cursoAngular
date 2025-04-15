@@ -1,0 +1,18 @@
+
+<div class="w-80 d-flex justify-content-center">
+    <div class="text-center">
+        <h1 class="text text-warning">Aplicacion Calculadora</h1>
+        <div>
+            <label class="m-2" for="">Operador A</label>
+            <input class="w-25" type="number" [(ngModel)]="opA">
+        </div>
+        <div>
+            <label class="m-2" for="">Operador B</label>
+            <input class="w-25" type="number" [(ngModel)]="opB">
+        </div>
+        <button class="btn btn-primary" (click)="sumar()">Sumar</button>
+        <p>Resultado: {{suma}}</p>
+
+    </div>
+    
+</div>

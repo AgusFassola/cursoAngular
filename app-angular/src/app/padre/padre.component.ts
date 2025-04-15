@@ -9,5 +9,12 @@ import { HijoComponent } from "./hijo/hijo.component";
   styleUrl: './padre.component.css'
 })
 export class PadreComponent {
+  mensaje: string ='';
+  mostrarMensaje(){
+   this.mensaje ='Click en boton';
+  }
+  eliminarMensaje(){
+  return this.mensaje = '';
+}
 
 }
