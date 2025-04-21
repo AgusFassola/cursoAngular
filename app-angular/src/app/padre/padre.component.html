@@ -8,6 +8,13 @@
     <div class="alert alert-success mt-4 mx-auto w-50">
         {{mensaje}}
     </div>
+
+    <h3 class="text-primary">Componente PADRE</h3>
+    <app-hijo (notificarPadre)="recibirMensaje($event)"></app-hijo>
+
+    @if(mensaje){
+        <p class="mt-3 alert alert-info w-50 mx-auto">{{mensaje}}</p>
+    }
 </div>
 
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './hijo.component.css'
 })
 export class HijoComponent {
+  @Output() notificarPadre = new EventEmitter<string>();
+
+  //se emite una cadena
+  enviarMensaje() {
+    this.notificarPadre.emit('Mensaje desde el hijo al padre');
+  }
   private titulo = 'Titulo de hijo';
   producto={
     nombre:'Nuevo Producto',

@@ -10,6 +10,10 @@ import { HijoComponent } from "./hijo/hijo.component";
 })
 export class PadreComponent {
   mensaje: string ='';
+  recibirMensaje(mensajeHijo: string) {
+    this.mensaje = mensajeHijo;
+  }
+  
   mostrarMensaje(){
    this.mensaje ='Click en boton';
   }

@@ -20,3 +20,8 @@ npm i @popperjs/core --save
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
 
+!:  -> OPERADOR NON-NULL ASSERTION
+le dice a typescript que confíe en que esta propiedad va a ser inicializada
+
+@input  -> uso una variable en el hijo desde el padre
+
