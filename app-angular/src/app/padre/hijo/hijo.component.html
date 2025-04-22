@@ -1,7 +1,14 @@
-<p>Descripción: {{producto.nombre}}, Precio: ${{producto.precio}}</p>
-<p>{{mostrarTitulo}}</p>
+<!-- <p>Descripción: {{producto.nombre}}, Precio: ${{producto.precio}}</p>
+<p>{{mostrarTitulo}}</p> -->
 <div class="container">
-    <button class=" btn btn-primary" (click)="enviarMensaje()">
-        Enviar menaaje al padre
-    </button>
+
+    <div>
+        <label class="m-2" for="">Operador A</label>
+        <input class="w-25" type="number" [(ngModel)]="opA">
+    </div>
+    <div>
+        <label class="m-2" for="">Operador B</label>
+        <input class="w-25" type="number" [(ngModel)]="opB">
+    </div>
+    <button class="btn btn-primary" (click)="sumarNumeros()">Sumar</button>
 </div>

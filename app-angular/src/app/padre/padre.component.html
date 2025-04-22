@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 class="text-center text-warning">Listado de Productos</h1>
+    <!-- <h1 class="text-center text-warning">Listado de Productos</h1>
     <div class="d-flex justify-content-center mt-3">
         <app-hijo/>
         <button class="btn btn-primary m-2" (click)="mostrarMensaje()">ver mensaje</button>
@@ -8,12 +8,12 @@
     <div class="alert alert-success mt-4 mx-auto w-50">
         {{mensaje}}
     </div>
+ -->
+    <h3 class="text-primary">CALCULADORA PADRE</h3>
+    <app-hijo (notificarPadre)="recibirSuma($event)"></app-hijo>
 
-    <h3 class="text-primary">Componente PADRE</h3>
-    <app-hijo (notificarPadre)="recibirMensaje($event)"></app-hijo>
-
-    @if(mensaje){
-        <p class="mt-3 alert alert-info w-50 mx-auto">{{mensaje}}</p>
+    @if(resultado){
+        <p class="mt-3 alert alert-info w-50 mx-auto">{{resultado}}</p>
     }
 </div>
 

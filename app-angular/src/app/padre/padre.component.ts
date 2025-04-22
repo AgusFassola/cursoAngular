@@ -9,16 +9,19 @@ import { HijoComponent } from "./hijo/hijo.component";
   styleUrl: './padre.component.css'
 })
 export class PadreComponent {
-  mensaje: string ='';
-  recibirMensaje(mensajeHijo: string) {
-    this.mensaje = mensajeHijo;
+/* recibirSuma($event: Event) {
+throw new Error('Method not implemented.');
+} */
+  resultado: number = 0;
+  recibirSuma(suma: number) {
+    this.resultado = suma;
   }
   
-  mostrarMensaje(){
+  /* mostrarMensaje(){
    this.mensaje ='Click en boton';
   }
   eliminarMensaje(){
   return this.mensaje = '';
-}
+} */
 
 }
