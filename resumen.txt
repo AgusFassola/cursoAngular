@@ -25,3 +25,6 @@ le dice a typescript que confíe en que esta propiedad va a ser inicializada
 
 @input  -> uso una variable en el hijo desde el padre(de padre a hijo)
 @output -> uso una variable del padre desde el hijo(de hijo a padre)
+
+CREAR UN SERVICIO
+ng g s nombre --skip-tests

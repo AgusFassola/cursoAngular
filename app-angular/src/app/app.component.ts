@@ -7,6 +7,7 @@ import { PadreComponent } from "./padre/padre.component";
 import { ReplicadorComponent } from "./replicador/replicador.component";
 import { CalculadoraComponent } from "./calculadora/calculadora.component";
 import { ListaTareasComponent } from "./lista-tareas/lista-tareas.component";
+import { MensajeService } from './mensaje.service';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +18,11 @@ import { ListaTareasComponent } from "./lista-tareas/lista-tareas.component";
 })
 export class AppComponent {
   title = 'Tienda Online';
+
+  mensaje: string;
+
+  //inyeccion de dependencia
+  constructor(mensajeService: MensajeService){
+    this.mensaje = mensajeService.obtenerMensaje();
+  }
 }
