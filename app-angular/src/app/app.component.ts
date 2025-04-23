@@ -6,13 +6,14 @@ import { InterpolacionComponent } from "./interpolacion/interpolacion.component"
 import { PadreComponent } from "./padre/padre.component";
 import { ReplicadorComponent } from "./replicador/replicador.component";
 import { CalculadoraComponent } from "./calculadora/calculadora.component";
-import { ListaTareasComponent } from "./lista-tareas/lista-tareas.component";
 import { MensajeService } from './mensaje.service';
+import { ListadoUsuariosComponent } from "./listado-usuarios/listado-usuarios.component";
+import { ListaProductosComponent } from "./lista-productos/lista-productos.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, ReplicadorComponent, CalculadoraComponent, ListaTareasComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, ReplicadorComponent, CalculadoraComponent, ListadoUsuariosComponent, ListaProductosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
