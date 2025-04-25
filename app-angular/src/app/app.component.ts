@@ -12,6 +12,10 @@ import { ListaProductosComponent } from "./lista-productos/lista-productos.compo
 import { EjemploPipesComponent } from "./ejemplo-pipes/ejemplo-pipes.component";
 import { registerLocaleData } from '@angular/common';
 import localEs from '@angular/common/locales/es';
+import { CabeceraPresComponent } from "./cabecera-pres/cabecera-pres.component";
+import { FormularioPresComponent } from "./formulario-pres/formulario-pres.component";
+import { IngresosPresComponent } from "./ingresos-pres/ingresos-pres.component";
+import { EgresosPresComponent } from "./egresos-pres/egresos-pres.component";
 
 //Regitramos los datos de localoizacion para español
 registerLocaleData(localEs, 'es');
@@ -19,7 +23,7 @@ registerLocaleData(localEs, 'es');
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, ReplicadorComponent, CalculadoraComponent, ListadoUsuariosComponent, ListaProductosComponent, EjemploPipesComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, ReplicadorComponent, CalculadoraComponent, ListadoUsuariosComponent, ListaProductosComponent, EjemploPipesComponent, CabeceraPresComponent, FormularioPresComponent, IngresosPresComponent, EgresosPresComponent],
   providers:[ {provide: LOCALE_ID, useValue:'es'} ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
